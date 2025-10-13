@@ -1,7 +1,6 @@
-import jakarta.persistence.*;
+package com.vinicius.CadastroDeNinjasAula.Pessoas;
 
-import javax.naming.Name;
-import java.util.Date;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "DB_PESSOAS")
