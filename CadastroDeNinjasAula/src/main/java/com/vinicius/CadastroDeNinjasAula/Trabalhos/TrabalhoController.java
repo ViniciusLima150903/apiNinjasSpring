@@ -1,14 +1,11 @@
 package com.vinicius.CadastroDeNinjasAula.Trabalhos;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping(name = "/trabalhos")
+@RequestMapping("/trabalhos")
 public class TrabalhoController {
 
     private final TrabalhoService trabalhoService;
@@ -23,7 +20,7 @@ public class TrabalhoController {
         return trabalhoService.getAllTrabalhos();
     }
 
-    @GetMapping
+    @PostMapping
     public TrabalhoModel cadastrarTrabalho(@RequestBody TrabalhoModel trabalho) {
         return trabalhoService.salvarTrabalho(trabalho);
     }
