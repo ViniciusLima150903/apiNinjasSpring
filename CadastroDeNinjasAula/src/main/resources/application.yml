@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:bancoVinicius
+    driver-class-name: org.h2.Driver
+    username: vini
+    password: 32235671vini
+  h2:
+    console:
+      enabled: true
