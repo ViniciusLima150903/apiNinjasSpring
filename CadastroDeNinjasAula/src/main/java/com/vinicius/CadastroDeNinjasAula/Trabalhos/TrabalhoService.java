@@ -20,4 +20,8 @@ public class TrabalhoService {
     public TrabalhoModel salvarTrabalho(TrabalhoModel trabalho) {
         return trabalhoRepository.save(trabalho);
     }
+
+    public void deletarTrabalho(Long id) {
+        trabalhoRepository.deleteById(id);
+    }
 }

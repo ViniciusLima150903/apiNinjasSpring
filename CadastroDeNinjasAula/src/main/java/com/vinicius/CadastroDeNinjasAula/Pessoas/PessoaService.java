@@ -21,4 +21,8 @@ public class PessoaService {
         return pessoaRepository.save(pessoaModel);
     }
 
+    public void deletarPessoa(Long id) {
+        pessoaRepository.deleteById(id);
+    }
+
 }
